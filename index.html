@@ -1,0 +1,655 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      ul {
+        padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+      }
+      ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+      }
+      ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+      }
+      ul li a:hover {
+        color: #fff;
+        background: #939393;
+      }
+      ul li ul.dropdown {
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+      }
+      ul li:hover ul.dropdown {
+        display: block; /* Display the dropdown */
+      }
+      ul li ul.dropdown li {
+        display: block;
+      }
+      .main-menu {
+        width: 400px;
+        height: 50px;
+        line-height: 50px;
+        list-style: none;
+        margin: 0;
+        float: right;
+        font: 18px 'Arial';
+        position: relative;
+      }
+      .main-menu li {
+        display: table-cell;
+        border-right: 1px solid #0854a9;
+        background: #a39c9c;
+      }
+      .main-menu li a {
+        line-height: 47px;
+        border-top: 3px solid transparent;
+        display: block;
+        padding: 0 8px;
+        color: #ffffff;
+      }
+      .main-menu li a:hover,
+      .main-menu li a:focus,
+      .main-menu li.dropped > a,
+      .main-menu li:focus > a {
+        color: #023e81;
+        background: #ff0000;
+        border-top: 3px solid #ffc226;
+        text-decoration: none;
+      }
+      .main-menu li:hover ul,
+      .main-menu li:focus ul {
+        display: block;
+      }
+      .sub-menu {
+        background: #c9c5c5;
+        position: absolute;
+        margin: 0;
+        display: none;
+        min-width: 148px;
+        border-bottom: 3px solid #ffc226;
+        -webkit-border-radius: 0 0 4px 4px;
+        border-radius: 0 0 4px 4px;
+      }
+      .sub-menu li {
+        display: block;
+        border: none;
+      }
+      .sub-menu li a {
+        line-height: normal;
+        border: none;
+        display: block;
+        padding: 8px;
+        color: #023e81;
+      }
+      .sub-menu li a:hover,
+      .sub-menu li a:focus {
+        line-height: auto;
+        border: none;
+        color: #ffffff;
+        background: #a1a6aa;
+      }
+      .main-menu li a:focus + ul {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+     <img
+      src="https://assets-global.website-files.com/5faa2f162d0124566f0fd27c/5fc5f954cf58847c79be334e_PR%402x-p-500.png"
+      alt=""
+      height="300"
+      width="300"
+    />
+    <img
+      src="https://source.unsplash.com/random"
+      height="300"
+      width="300"
+      alt=""
+    />
+    <img
+      src="http://localhost:2003/2.jpeg"
+      alt="anand chaudhary"
+      height="300"
+      width="300"
+    />
+    <img
+      src="https://source.unsplash.com/user/erondu"
+      alt=""
+      height="300"
+      width="300"
+    />
+    <img
+      src="https://source.unsplash.com/user/rolex"
+      alt=""
+      height="300"
+      width="300"
+    />
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYfSAlQioAlgDf750zw5h_CCgBdhYENYu9A&usqp=CAU"
+      alt=""
+      height="300"
+      width="300"
+    />
+
+    <div class="main-menu-wrapper">
+      <nav role="navigation" aria-label="Main menu">
+        <ul class="main-menu clearfix" role="menubar">
+          <li>
+            <a href="" tabindex="1">Main menu 1</a>
+
+            <ul class="sub-menu clearfix">
+              <li><a href="#">Sub menu 1</a></li>
+              <li><a href="#">Sub menu 2</a></li>
+              <li><a href="#">Sub menu 3</a></li>
+              <li><a href="#">Sub menu 4</a></li>
+              <li><a href="#">Sub menu 5</a></li>
+              <li><a href="#">Sub menu 6</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" tabindex="1">Main menu 2</a>
+
+            <ul class="sub-menu clearfix">
+              <li><a href="#">Sub menu 1</a></li>
+              <li><a href="#">Sub menu 2</a></li>
+              <li><a href="#">Sub menu 3</a></li>
+              <li><a href="#">Sub menu 4</a></li>
+              <li><a href="#">Sub menu 5</a></li>
+              <li><a href="#">Sub menu 6</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" tabindex="1">Main menu 3</a>
+
+            <ul class="sub-menu clearfix">
+              <li><a href="#">Sub menu 1</a></li>
+              <li><a href="#">Sub menu 2</a></li>
+              <li><a href="#">Sub menu 1</a></li>
+              <li><a href="#">Sub menu 2</a></li>
+              <li><a href="#">Sub menu 3</a></li>
+              <li><a href="#">Sub menu 4</a></li>
+              <li><a href="#">Sub menu 5</a></li>
+              <li><a href="#">Sub menu 6</a></li>
+              <li><a href="#">Sub menu 4</a></li>
+              <li><a href="#">Sub menu 5</a></li>
+              <li><a href="#">Sub menu 6</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" tabindex="1">Main menu 4</a>
+
+            <ul class="sub-menu clearfix">
+              <li><a href="#">Sub menu 1</a></li>
+              <li><a href="#">Sub menu 2</a></li>
+              <li><a href="#">Sub menu 3</a></li>
+              <li><a href="#">Sub menu 4</a></li>
+              <li><a href="#">Sub menu 5</a></li>
+              <li><a href="#">Sub menu 6</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+      <!-- textarea -->
+
+      <!-- normal text area -->
+      <div>
+        <label>normal textarea label</label>
+        <textarea
+          name="normaltext"
+          rows="4"
+          cols="50"
+          placeholder="hey we are great"
+        >
+        </textarea>
+      </div>
+
+      <!-- label after normal text area -->
+      <div>
+        <textarea name="normaltextbeforelabel" rows="4" cols="50"> </textarea>
+        <label>label after normal text area</label>
+      </div>
+
+      <!-- label after normal text area -->
+      <div>
+        <textarea rows="4" cols="50"> </textarea>
+        <label>label after normal text area</label>
+      </div>
+
+      <!-- label after and before normal text area -->
+      <div>
+        <label>label before normal text area</label>
+        <textarea name="normaltextbeforelabel" rows="4" cols="50"> </textarea>
+        <label>label after normal text area</label>
+      </div>
+
+      <!-- span label before text area -->
+      <div>
+        <span>textarea span label</span>
+        <textarea name="w3review" rows="4" cols="50" aria-label="ayush mishra">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea
+        >
+      </div>
+
+      <!-- span out of the div -->
+      <span>textarea label on span</span>
+      <div>
+        <textarea name="textspan" rows="4" cols="50">
+textarea that has span outer </textarea
+        >
+      </div>
+
+      <!-- spans as label for textarea -->
+      <span>textarea label on div</span>
+      <span>required *</span>
+      <textarea name="divtext" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea
+      >
+
+      <!-- text area that has placeholder -->
+      <textarea name="textareaforth" rows="4" cols="50"></textarea>
+      <!-- text area that has placeholder -->
+      <textarea
+        name="textareaforthfefef"
+        rows="4"
+        cols="50"
+        placeholder="fill this field again"
+      >
+gegeg geg
+</textarea
+      >
+      <!-- text area that has placeholder -->
+      <textarea
+        name="textareaforthegetgetg"
+        rows="4"
+        cols="50"
+        title="ayush mishra"
+      >
+vfdbdgb
+</textarea
+      >
+      <label>sixtj textarea</label>
+
+      <div>
+        <label>Hey I'm lead label</label>
+        <textarea name="hey darko" rows="4" cols="50"></textarea>
+        <textarea name="hey dude" rows="4" cols="50"></textarea>
+        <textarea name="hey fucker" rows="4" cols="50"></textarea>
+        <textarea name="hey chinchan" rows="4" cols="50"></textarea>
+        <label>I'm label from bottom</label>
+      </div>
+
+      <label>hey boss</label>
+      <div>
+        <textarea name="hey darko" rows="4" cols="50"></textarea>
+        <textarea rows="4" cols="50"></textarea>
+        <input type="text" placeholder="hey i'm input" />
+        <textarea rows="4" cols="50"></textarea>
+        <textarea name="hey chinchan" rows="4" cols="50"></textarea>
+        <label>I'm label from bottom</label>
+      </div>
+
+      <!-- button -->
+      <div>
+        <label>First button</label>
+        <button type="button" name="first button">Plain Button</button>
+      </div>
+      <div>
+        <label>Second button</label>
+        <button type="button" name="second button">Plain Button</button>
+      </div>
+      <div>
+        <label>Third button</label>
+        <button type="button" name="third button">Plain Button</button>
+        <label>Third button</label>
+      </div>
+      <button type="button" name="forth button" title="my button">
+        Plain Button
+      </button>
+      <button type="button" name="fifth button" title="disable" disabled>
+        Button
+      </button>
+
+      <br />
+      <br />
+      <br />
+
+      <form action="#" id="nameform">
+        <label>First name:</label>
+        <input type="text" name="fname" /><br /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" />
+      </form>
+      <button type="submit" form="nameform" value="Submit">Submit</button>
+
+      <form action="#">
+        <label>User ID:</label>
+        <input type="text" name="id" />
+
+        <label>Password:</label>
+        <input type="text" name="pass" />
+
+        <button type="reset" value="Reset">reset</button>
+        <button type="submit" value="Submit">Submit</button>
+      </form>
+
+      <div style="margin: 50px">
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin: 50px">
+        <audio controls autoplay>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin: 50px">
+        <audio controls autoplay>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin: 50px">
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div style="margin: 50px">
+        <audio controls>Your browser does not support the audio element.</audio>
+      </div>
+
+      <video width="320" height="240" controls autoplay>
+        <source
+          src="https://drive.google.com/uc?export=download&id=13yadqjvZV9F_1E0837bKX3ti9AUUh8QZ"
+          type="video/mp4"
+        />
+      </video>
+
+      <video width="320" height="240" controls autoplay>
+        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div id="test_link-55">YOLO 55</div>
+    <div id="wrapper">
+      <div class="container pt-5">
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.google.com/"
+                >Active</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.google.com/">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.google.com/"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="https://www.google.com/"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link active">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active">
+              <i class="fa fa-phone"></i>
+            </a>
+          </li>
+          <li class="nav-item px-4">
+            <label>Test Link</label>
+            <a class="nav-link"></a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link"></a>
+            <label>Link Test</label>
+          </li>
+          <li class="nav-item px-4">
+            <div id="test_link-44">YOLO 44</div>
+            <a class="nav-link" aria-labelledby="test_link-44">Link</a>
+          </li>
+          <li class="nav-item px-4">
+            <a
+              class="nav-link"
+              href="https://www.google.com/"
+              aria-labelledby="test_link-44"
+              >Link</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-labelledby="test_link-55">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-labelledby="test_link-55"></a>
+          </li>
+        </ul>
+
+        <main class="my-5">
+          <form>
+            <div class="form-group mb-3">
+              <label>Test 1.0</label>
+              <input type="text" class="form-control" />
+            </div>
+
+            <div class="form-group mb-3">
+              <input type="text" class="form-control" placeholder="text 2.34" />
+              <label>Test 2.0</label>
+            </div>
+
+            <div class="form-group mb-3">
+              <label id="other-label-28">Other text preview</label>
+              <input type="text" class="form-control" />
+              <label>my input label</label>
+            </div>
+
+            <div class="form-group mb-3">
+              <label id="other-label-48">The ultimate label</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="This is an example of inline"
+              />
+            </div>
+
+            <div class="form-group mb-3">
+              <input
+                aria-labelledby="other-label-48"
+                type="text"
+                class="form-control"
+                placeholder="This is an example of inline yohahahha"
+              />
+            </div>
+
+            <div class="form-group mb-3">
+              <input
+                aria-labelledby="other-label-48"
+                type="text"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Add Name</label>
+              <input type="text" class="form-control" />
+              <input type="text" class="form-control" />
+            </div>
+          </form>
+
+          <form>
+            <input type="text" class="form-control mb-3" />
+            <input type="email" class="form-control mb-3" />
+            <input type="checkbox" class="form-control mb-3" />
+            <input type="url" class="form-control mb-3" />
+            <input type="text" placeholder="hey i'm alone" />
+            <input
+              type="range"
+              class="form-control mb-3"
+              aria-label="hey we are on testing mode"
+            />
+            <input type="radio" class="form-control mb-3" />
+            <input type="search" class="form-control mb-3" />
+            <input type="submit" class="form-control mb-3" />
+            <input type="button" class="form-control mb-3" />
+          </form>
+
+          <div class="form-group">
+            <label><i class="fa fa-email"></i></label>
+            <input type="email" class="form-control mb-3" />
+          </div>
+
+          <div>
+            <label></label>
+            <input type="text" class="form-control mb-3" />
+          </div>
+        </main>
+
+        <div>
+          <div class="form-control">
+            <label>Test Label</label>
+            <select>
+              <option>Test</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label></label>
+            <select>
+              <option selected>Test 1</option>
+              <option>Test 2</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label>Test my select</label>
+            <select>
+              <option selected>Test 1</option>
+              <option>Test 2</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label>Test my select</label>
+            <select></select>
+          </div>
+
+          <div class="form-control">
+            <select>
+              <option>Test 1</option>
+              <option selected>Test 2</option>
+            </select>
+          </div>
+
+          <div>
+            <p>something ever happens saaahh</p>
+            <input type="text" class="mb-3" />
+          </div>
+
+          <div>
+            <div>somethingever happensshhaaahfreeerereh</div>
+            <input type="text" class="mb-3" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="root"></div>
+<!--     <script type="text/javascript">
+      (function(global) {
+        let s = global.document.createElement('script');
+        s.src = "https://dkzkucdzbu32y.cloudfront.net/sdk.js";
+        s.async = true;
+        window.compliantIO = {
+          config: {
+          interface: {
+            leadColor: '#017A4F',
+            position: 'LEFT',
+            statementLink: '',
+            footer: 'The great solution by my company',
+          },
+          trigger: {
+            buttonColor: '#000000',
+            horizontalOffset: 40,
+            verticalOffset: 40,
+            hide: false,
+            shape: 'SQUARE',
+            size: 'LARGE',
+            horizontalPosition: 'RIGHT',
+            verticalPosition: 'CENTER',
+          },
+          mobile: {
+            buttonColor: '#000000',
+            horizontalOffset: 15,
+            verticalOffset: 15,
+            hide: false,
+            shape: 'ROUND',
+            size: 'MEDIUM',
+            horizontalPosition: 'RIGHT',
+            verticalPosition: 'BOTTOM',
+          },
+        },
+      };
+        global.document.body.appendChild(s)
+    }(window));
+  </script> -->
+  </body>
+</html>
