@@ -614,42 +614,40 @@ vfdbdgb
 
     <div id="root"></div>
 <!--     <script type="text/javascript">
-      (function(global) {
-        let s = global.document.createElement('script');
-        s.src = "https://dkzkucdzbu32y.cloudfront.net/sdk.js";
-        s.async = true;
-        window.compliantIO = {
-          config: {
-          interface: {
-            leadColor: '#017A4F',
-            position: 'LEFT',
-            statementLink: '',
-            footer: 'The great solution by my company',
-          },
-          trigger: {
-            buttonColor: '#000000',
-            horizontalOffset: 40,
-            verticalOffset: 40,
-            hide: false,
-            shape: 'SQUARE',
-            size: 'LARGE',
-            horizontalPosition: 'RIGHT',
-            verticalPosition: 'CENTER',
-          },
-          mobile: {
-            buttonColor: '#000000',
-            horizontalOffset: 15,
-            verticalOffset: 15,
-            hide: false,
-            shape: 'ROUND',
-            size: 'MEDIUM',
-            horizontalPosition: 'RIGHT',
-            verticalPosition: 'BOTTOM',
-          },
-        },
-      };
-        global.document.body.appendChild(s)
-    }(window));
+      (function(){
+    var s = document.createElement('script'),
+    e = ! document.body ? document.querySelector('head') : document.body;
+    s.src = 'https://acsbapp.com/apps/app/dist/js/app.js';
+    s.async = true;
+    s.onload = function(){
+        acsbJS.init({
+                statementLink    : 'https://www.mailinator.com/',
+                footerHtml       : 'test',
+                hideMobile       : false,
+                hideTrigger      : false,
+                language         : 'en',
+                position         : 'left',
+                leadColor        : '#1631f8',
+                triggerColor     : '#146ff8',
+                triggerRadius    : '50%',
+                triggerPositionX : 'left',
+                triggerPositionY : 'bottom',
+                triggerIcon      : 'people',
+                triggerSize      : 'medium',
+                triggerOffsetX   : 20,
+                triggerOffsetY   : 20,
+                mobile           : {
+                    triggerSize      : 'small',
+                    triggerPositionX : 'right',
+                    triggerPositionY : 'bottom',
+                    triggerOffsetX   : 10,
+                    triggerOffsetY   : 10,
+                    triggerRadius    : '50%'
+                }
+        });
+    };
+    e.appendChild(s);
+}());
   </script> -->
   </body>
 </html>
